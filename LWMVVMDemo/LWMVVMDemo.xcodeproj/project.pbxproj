@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A3CCF381E79176E00653ACF /* LWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF371E79176E00653ACF /* LWViewController.m */; };
+		2A3CCF3C1E7917C400653ACF /* LWView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF3B1E7917C400653ACF /* LWView.m */; };
+		2A3CCF401E7917F900653ACF /* LWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF3F1E7917F900653ACF /* LWViewModel.m */; };
+		2A3CCF441E79193800653ACF /* CMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF431E79193800653ACF /* CMRequest.m */; };
+		2A3CCF471E79396D00653ACF /* LWCoreToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF461E79396D00653ACF /* LWCoreToolCenter.m */; };
 		2AFBB51C1E78D346002EE0D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB51B1E78D346002EE0D6 /* main.m */; };
 		2AFBB5251E78D346002EE0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBB5231E78D346002EE0D6 /* Main.storyboard */; };
 		2AFBB5271E78D346002EE0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBB5261E78D346002EE0D6 /* Assets.xcassets */; };
@@ -14,6 +19,8 @@
 		2AFBB5351E78D346002EE0D6 /* LWMVVMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB5341E78D346002EE0D6 /* LWMVVMDemoTests.m */; };
 		2AFBB5401E78D346002EE0D6 /* LWMVVMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB53F1E78D346002EE0D6 /* LWMVVMDemoUITests.m */; };
 		2AFBB5501E78D6A1002EE0D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB54F1E78D6A1002EE0D6 /* AppDelegate.m */; };
+		2AFBB5691E78DB01002EE0D6 /* LWStartApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB5681E78DB01002EE0D6 /* LWStartApp.m */; };
+		2AFBB56C1E78DB1F002EE0D6 /* LWThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB56B1E78DB1F002EE0D6 /* LWThirdPartService.m */; };
 		B080F257FE822513DC5C7D91 /* libPods-LWMVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864102FE54A20F539EC8C7E8 /* libPods-LWMVVMDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A3CCF291E78EEBA00653ACF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2A3CCF361E79176E00653ACF /* LWViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWViewController.h; sourceTree = "<group>"; };
+		2A3CCF371E79176E00653ACF /* LWViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWViewController.m; sourceTree = "<group>"; };
+		2A3CCF391E79179C00653ACF /* LWViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewControllerProtocol.h; sourceTree = "<group>"; };
+		2A3CCF3A1E7917C400653ACF /* LWView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWView.h; sourceTree = "<group>"; };
+		2A3CCF3B1E7917C400653ACF /* LWView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWView.m; sourceTree = "<group>"; };
+		2A3CCF3D1E7917D200653ACF /* LWViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewProtocol.h; sourceTree = "<group>"; };
+		2A3CCF3E1E7917F800653ACF /* LWViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWViewModel.h; sourceTree = "<group>"; };
+		2A3CCF3F1E7917F900653ACF /* LWViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWViewModel.m; sourceTree = "<group>"; };
+		2A3CCF411E79180D00653ACF /* LWViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewModelProtocol.h; sourceTree = "<group>"; };
+		2A3CCF421E79193800653ACF /* CMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRequest.h; sourceTree = "<group>"; };
+		2A3CCF431E79193800653ACF /* CMRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRequest.m; sourceTree = "<group>"; };
+		2A3CCF451E79396D00653ACF /* LWCoreToolCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCoreToolCenter.h; sourceTree = "<group>"; };
+		2A3CCF461E79396D00653ACF /* LWCoreToolCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCoreToolCenter.m; sourceTree = "<group>"; };
 		2AFBB5171E78D346002EE0D6 /* LWMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFBB51B1E78D346002EE0D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AFBB5241E78D346002EE0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +77,10 @@
 		2AFBB5641E78D942002EE0D6 /* UtilsMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UtilsMacro.h; sourceTree = "<group>"; };
 		2AFBB5651E78D94D002EE0D6 /* VendorMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorMacro.h; sourceTree = "<group>"; };
 		2AFBB5661E78D962002EE0D6 /* ACMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACMacro.h; sourceTree = "<group>"; };
+		2AFBB5671E78DB01002EE0D6 /* LWStartApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWStartApp.h; sourceTree = "<group>"; };
+		2AFBB5681E78DB01002EE0D6 /* LWStartApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWStartApp.m; sourceTree = "<group>"; };
+		2AFBB56A1E78DB1F002EE0D6 /* LWThirdPartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWThirdPartService.h; sourceTree = "<group>"; };
+		2AFBB56B1E78DB1F002EE0D6 /* LWThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWThirdPartService.m; sourceTree = "<group>"; };
 		864102FE54A20F539EC8C7E8 /* libPods-LWMVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWMVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D49377A9EC5824A1B46796 /* Pods-LWMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWMVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWMVVMDemo/Pods-LWMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F152A32B105EB55953B466BB /* Pods-LWMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWMVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWMVVMDemo/Pods-LWMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +112,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A3CCF2A1E790E9500653ACF /* LWSection */ = {
+			isa = PBXGroup;
+			children = (
+				2A3CCF2B1E790E9500653ACF /* CircleList */,
+			);
+			path = LWSection;
+			sourceTree = "<group>";
+		};
+		2A3CCF2B1E790E9500653ACF /* CircleList */ = {
+			isa = PBXGroup;
+			children = (
+				2A3CCF2C1E790E9500653ACF /* Model */,
+				2A3CCF2D1E790E9500653ACF /* View */,
+				2A3CCF2E1E790E9500653ACF /* ViewController */,
+				2A3CCF2F1E790E9500653ACF /* ViewModel */,
+			);
+			path = CircleList;
+			sourceTree = "<group>";
+		};
+		2A3CCF2C1E790E9500653ACF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A3CCF2D1E790E9500653ACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A3CCF2E1E790E9500653ACF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2A3CCF2F1E790E9500653ACF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A3CCF301E79172800653ACF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2A3CCF361E79176E00653ACF /* LWViewController.h */,
+				2A3CCF371E79176E00653ACF /* LWViewController.m */,
+				2A3CCF391E79179C00653ACF /* LWViewControllerProtocol.h */,
+				2A3CCF3A1E7917C400653ACF /* LWView.h */,
+				2A3CCF3B1E7917C400653ACF /* LWView.m */,
+				2A3CCF3D1E7917D200653ACF /* LWViewProtocol.h */,
+				2A3CCF3E1E7917F800653ACF /* LWViewModel.h */,
+				2A3CCF3F1E7917F900653ACF /* LWViewModel.m */,
+				2A3CCF411E79180D00653ACF /* LWViewModelProtocol.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2A3CCF311E79172800653ACF /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2A3CCF321E79172800653ACF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2A3CCF331E79172800653ACF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A3CCF341E79172800653ACF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		2A3CCF351E79172800653ACF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2AFBB50E1E78D346002EE0D6 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				2AFBB51B1E78D346002EE0D6 /* main.m */,
+				2A3CCF291E78EEBA00653ACF /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,6 +280,10 @@
 			children = (
 				2AFBB54E1E78D6A1002EE0D6 /* AppDelegate.h */,
 				2AFBB54F1E78D6A1002EE0D6 /* AppDelegate.m */,
+				2AFBB5671E78DB01002EE0D6 /* LWStartApp.h */,
+				2AFBB5681E78DB01002EE0D6 /* LWStartApp.m */,
+				2AFBB56A1E78DB1F002EE0D6 /* LWThirdPartService.h */,
+				2AFBB56B1E78DB1F002EE0D6 /* LWThirdPartService.m */,
 			);
 			path = APPDelegate;
 			sourceTree = "<group>";
@@ -175,6 +303,12 @@
 		2AFBB5521E78D71B002EE0D6 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				2A3CCF301E79172800653ACF /* Base */,
+				2A3CCF311E79172800653ACF /* Categories */,
+				2A3CCF321E79172800653ACF /* Core */,
+				2A3CCF331E79172800653ACF /* Models */,
+				2A3CCF341E79172800653ACF /* Public */,
+				2A3CCF351E79172800653ACF /* Views */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -182,6 +316,10 @@
 		2AFBB5531E78D71B002EE0D6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A3CCF421E79193800653ACF /* CMRequest.h */,
+				2A3CCF431E79193800653ACF /* CMRequest.m */,
+				2A3CCF451E79396D00653ACF /* LWCoreToolCenter.h */,
+				2A3CCF461E79396D00653ACF /* LWCoreToolCenter.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,6 +341,7 @@
 		2AFBB5551E78D71B002EE0D6 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				2A3CCF2A1E790E9500653ACF /* LWSection */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -425,7 +564,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AFBB51C1E78D346002EE0D6 /* main.m in Sources */,
+				2AFBB56C1E78DB1F002EE0D6 /* LWThirdPartService.m in Sources */,
+				2A3CCF381E79176E00653ACF /* LWViewController.m in Sources */,
+				2A3CCF401E7917F900653ACF /* LWViewModel.m in Sources */,
+				2AFBB5691E78DB01002EE0D6 /* LWStartApp.m in Sources */,
 				2AFBB5501E78D6A1002EE0D6 /* AppDelegate.m in Sources */,
+				2A3CCF471E79396D00653ACF /* LWCoreToolCenter.m in Sources */,
+				2A3CCF3C1E7917C400653ACF /* LWView.m in Sources */,
+				2A3CCF441E79193800653ACF /* CMRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +720,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9J6JH9B3QM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LWMVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LWMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -588,6 +736,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9J6JH9B3QM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LWMVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LWMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;

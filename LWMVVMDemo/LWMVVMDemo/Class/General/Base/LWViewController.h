@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LWViewController.h
 //  LWMVVMDemo
 //
 //  Created by qianbaoeo on 2017/3/15.
@@ -7,10 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
-
+#import "LWViewControllerProtocol.h"
+@interface LWViewController : UIViewController
 
 @end
-

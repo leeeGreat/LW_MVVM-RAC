@@ -1,0 +1,47 @@
+//
+//  PrefixHeader.pch
+//  LWMVVMDemo
+//
+//  Created by qianbaoeo on 2017/3/15.
+//  Copyright © 2017年 qianbaoeo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import "AppDelegate.h"
+
+//#import "CMRequest.h"
+//#import "LSCoreToolCenter.h"
+
+#import "ACMacro.h"
+#import "AppMacro.h"
+#import "UtilsMacro.h"
+#import "VendorMacro.h"
+#import "APIMacro.h"
+#import "NotificationMacro.h"
+
+#import <Reachability/Reachability.h>
+#import <JSONKit/JSONKit.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+
+#import <MJRefresh/MJRefresh.h>
+#import <MagicalRecord/MagicalRecord.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <RDVTabBarController/RDVTabBarController.h>
+#import <RDVTabBarController/RDVTabBarItem.h>
+#import <RDVTabBarController/RDVTabBar.h>
+
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+#import <UIViewController+MJPopupViewController.h>
+#import <FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+#endif
+#endif /* PrefixHeader_pch */
