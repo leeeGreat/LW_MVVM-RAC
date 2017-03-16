@@ -17,6 +17,7 @@
             [[self class] Is_initPersonaleData];
         });
     }
+//初始化个人信息
 + (void)Is_initPersonaleData
     {
         NSLog(@"Is_initPersonaleData");

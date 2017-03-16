@@ -54,7 +54,6 @@ void ShowErrorStatus(NSString *statues){
     }
 }
 
-
 void ShowMaskStatus(NSString *statues){
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{

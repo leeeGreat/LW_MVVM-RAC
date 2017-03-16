@@ -18,4 +18,46 @@
 }
 */
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self lw_setUpViews];
+        [self lw_bindViewModel];
+    }
+    return self;
+}
+
+- (instancetype)initWithViewModel:(id<LWViewModelProtocol>)viewModel
+{
+    self = [super init];
+    if (self) {
+        [self lw_setUpViews];
+        [self lw_bindViewModel];
+    }
+    return self;
+}
+
+- (void)lw_setUpViews
+{
+    
+}
+
+- (void)lw_bindViewModel
+{
+    
+}
+
+- (void)lw_addRetureKeyBoard
+{
+    UITapGestureRecognizer *tapG = [[UITapGestureRecognizer alloc] init];
+    tapG.numberOfTapsRequired = 1;
+    tapG.numberOfTouchesRequired = 1;
+    //绑定事件
+    [tapG.rac_gestureSignal subscribeNext:^(id x) {
+        AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        [appDelegate.window endEditing:YES];
+    }];
+    [self addGestureRecognizer:tapG];
+}
 @end

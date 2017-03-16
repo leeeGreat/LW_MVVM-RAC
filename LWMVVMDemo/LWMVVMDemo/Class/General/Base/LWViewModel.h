@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LWViewProtocol.h"
+#import "LWViewModelProtocol.h"
 
-@interface LWViewModel : NSObject
+@interface LWViewModel : NSObject<LWViewModelProtocol>
 @end

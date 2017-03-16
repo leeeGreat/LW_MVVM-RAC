@@ -21,6 +21,20 @@
 		2AFBB5501E78D6A1002EE0D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB54F1E78D6A1002EE0D6 /* AppDelegate.m */; };
 		2AFBB5691E78DB01002EE0D6 /* LWStartApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB5681E78DB01002EE0D6 /* LWStartApp.m */; };
 		2AFBB56C1E78DB1F002EE0D6 /* LWThirdPartService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB56B1E78DB1F002EE0D6 /* LWThirdPartService.m */; };
+		2AFFADD01E7A770900CCF22B /* LWCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADC61E7A770900CCF22B /* LWCollectionViewCell.m */; };
+		2AFFADD11E7A770900CCF22B /* LWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADC91E7A770900CCF22B /* LWNavigationController.m */; };
+		2AFFADD21E7A770900CCF22B /* LWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADCB1E7A770900CCF22B /* LWTableViewCell.m */; };
+		2AFFADD31E7A770900CCF22B /* LWTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADCE1E7A770900CCF22B /* LWTableViewHeaderFooterView.m */; };
+		2AFFADD61E7A785300CCF22B /* LWCirleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADD51E7A785300CCF22B /* LWCirleListViewController.m */; };
+		2AFFADD91E7A7C6C00CCF22B /* LWCircleListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADD81E7A7C6C00CCF22B /* LWCircleListView.m */; };
+		2AFFADDC1E7A7C8C00CCF22B /* LWCircleListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADDB1E7A7C8C00CCF22B /* LWCircleListTableCell.m */; };
+		2AFFADDF1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADDE1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.m */; };
+		2AFFADE21E7A7D1900CCF22B /* LWCircleListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADE11E7A7D1900CCF22B /* LWCircleListHeaderView.m */; };
+		2AFFADE51E7A7D4000CCF22B /* LWCircleListCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADE41E7A7D4000CCF22B /* LWCircleListCollectionCell.m */; };
+		2AFFADE81E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADE71E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.m */; };
+		2AFFADEB1E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADEA1E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.m */; };
+		2AFFADEE1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADED1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.m */; };
+		2AFFADF11E7A7DA400CCF22B /* LWCircleListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFFADF01E7A7DA400CCF22B /* LWCircleListViewModel.m */; };
 		B080F257FE822513DC5C7D91 /* libPods-LWMVVMDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 864102FE54A20F539EC8C7E8 /* libPods-LWMVVMDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +65,6 @@
 		2A3CCF3D1E7917D200653ACF /* LWViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewProtocol.h; sourceTree = "<group>"; };
 		2A3CCF3E1E7917F800653ACF /* LWViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWViewModel.h; sourceTree = "<group>"; };
 		2A3CCF3F1E7917F900653ACF /* LWViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWViewModel.m; sourceTree = "<group>"; };
-		2A3CCF411E79180D00653ACF /* LWViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewModelProtocol.h; sourceTree = "<group>"; };
 		2A3CCF421E79193800653ACF /* CMRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRequest.h; sourceTree = "<group>"; };
 		2A3CCF431E79193800653ACF /* CMRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRequest.m; sourceTree = "<group>"; };
 		2A3CCF451E79396D00653ACF /* LWCoreToolCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCoreToolCenter.h; sourceTree = "<group>"; };
@@ -81,6 +94,38 @@
 		2AFBB5681E78DB01002EE0D6 /* LWStartApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWStartApp.m; sourceTree = "<group>"; };
 		2AFBB56A1E78DB1F002EE0D6 /* LWThirdPartService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWThirdPartService.h; sourceTree = "<group>"; };
 		2AFBB56B1E78DB1F002EE0D6 /* LWThirdPartService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWThirdPartService.m; sourceTree = "<group>"; };
+		2AFFADC31E7A35F700CCF22B /* LWViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewModelProtocol.h; sourceTree = "<group>"; };
+		2AFFADC51E7A770900CCF22B /* LWCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCollectionViewCell.h; sourceTree = "<group>"; };
+		2AFFADC61E7A770900CCF22B /* LWCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCollectionViewCell.m; sourceTree = "<group>"; };
+		2AFFADC71E7A770900CCF22B /* LWCollerctionViewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCollerctionViewCellProtocol.h; sourceTree = "<group>"; };
+		2AFFADC81E7A770900CCF22B /* LWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWNavigationController.h; sourceTree = "<group>"; };
+		2AFFADC91E7A770900CCF22B /* LWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWNavigationController.m; sourceTree = "<group>"; };
+		2AFFADCA1E7A770900CCF22B /* LWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTableViewCell.h; sourceTree = "<group>"; };
+		2AFFADCB1E7A770900CCF22B /* LWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTableViewCell.m; sourceTree = "<group>"; };
+		2AFFADCC1E7A770900CCF22B /* LWTableVIewCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTableVIewCellProtocol.h; sourceTree = "<group>"; };
+		2AFFADCD1E7A770900CCF22B /* LWTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		2AFFADCE1E7A770900CCF22B /* LWTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		2AFFADCF1E7A770900CCF22B /* LWTableViewHeaderFooterViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWTableViewHeaderFooterViewProtocol.h; sourceTree = "<group>"; };
+		2AFFADD41E7A785300CCF22B /* LWCirleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCirleListViewController.h; sourceTree = "<group>"; };
+		2AFFADD51E7A785300CCF22B /* LWCirleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCirleListViewController.m; sourceTree = "<group>"; };
+		2AFFADD71E7A7C6C00CCF22B /* LWCircleListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListView.h; sourceTree = "<group>"; };
+		2AFFADD81E7A7C6C00CCF22B /* LWCircleListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListView.m; sourceTree = "<group>"; };
+		2AFFADDA1E7A7C8C00CCF22B /* LWCircleListTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListTableCell.h; sourceTree = "<group>"; };
+		2AFFADDB1E7A7C8C00CCF22B /* LWCircleListTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListTableCell.m; sourceTree = "<group>"; };
+		2AFFADDD1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListSectionHeaderView.h; sourceTree = "<group>"; };
+		2AFFADDE1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListSectionHeaderView.m; sourceTree = "<group>"; };
+		2AFFADE01E7A7D1900CCF22B /* LWCircleListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListHeaderView.h; sourceTree = "<group>"; };
+		2AFFADE11E7A7D1900CCF22B /* LWCircleListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListHeaderView.m; sourceTree = "<group>"; };
+		2AFFADE31E7A7D4000CCF22B /* LWCircleListCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListCollectionCell.h; sourceTree = "<group>"; };
+		2AFFADE41E7A7D4000CCF22B /* LWCircleListCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListCollectionCell.m; sourceTree = "<group>"; };
+		2AFFADE61E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListColectionCellViewModel.h; sourceTree = "<group>"; };
+		2AFFADE71E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListColectionCellViewModel.m; sourceTree = "<group>"; };
+		2AFFADE91E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListHeaderViewModel.h; sourceTree = "<group>"; };
+		2AFFADEA1E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListHeaderViewModel.m; sourceTree = "<group>"; };
+		2AFFADEC1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListSectionHeaderViewModel.h; sourceTree = "<group>"; };
+		2AFFADED1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListSectionHeaderViewModel.m; sourceTree = "<group>"; };
+		2AFFADEF1E7A7DA400CCF22B /* LWCircleListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCircleListViewModel.h; sourceTree = "<group>"; };
+		2AFFADF01E7A7DA400CCF22B /* LWCircleListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCircleListViewModel.m; sourceTree = "<group>"; };
 		864102FE54A20F539EC8C7E8 /* libPods-LWMVVMDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWMVVMDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D49377A9EC5824A1B46796 /* Pods-LWMVVMDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWMVVMDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LWMVVMDemo/Pods-LWMVVMDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F152A32B105EB55953B466BB /* Pods-LWMVVMDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWMVVMDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LWMVVMDemo/Pods-LWMVVMDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +186,16 @@
 		2A3CCF2D1E790E9500653ACF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AFFADD71E7A7C6C00CCF22B /* LWCircleListView.h */,
+				2AFFADD81E7A7C6C00CCF22B /* LWCircleListView.m */,
+				2AFFADDA1E7A7C8C00CCF22B /* LWCircleListTableCell.h */,
+				2AFFADDB1E7A7C8C00CCF22B /* LWCircleListTableCell.m */,
+				2AFFADDD1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.h */,
+				2AFFADDE1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.m */,
+				2AFFADE01E7A7D1900CCF22B /* LWCircleListHeaderView.h */,
+				2AFFADE11E7A7D1900CCF22B /* LWCircleListHeaderView.m */,
+				2AFFADE31E7A7D4000CCF22B /* LWCircleListCollectionCell.h */,
+				2AFFADE41E7A7D4000CCF22B /* LWCircleListCollectionCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +203,8 @@
 		2A3CCF2E1E790E9500653ACF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2AFFADD41E7A785300CCF22B /* LWCirleListViewController.h */,
+				2AFFADD51E7A785300CCF22B /* LWCirleListViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -155,6 +212,14 @@
 		2A3CCF2F1E790E9500653ACF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2AFFADE61E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.h */,
+				2AFFADE71E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.m */,
+				2AFFADE91E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.h */,
+				2AFFADEA1E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.m */,
+				2AFFADEC1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.h */,
+				2AFFADED1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.m */,
+				2AFFADEF1E7A7DA400CCF22B /* LWCircleListViewModel.h */,
+				2AFFADF01E7A7DA400CCF22B /* LWCircleListViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -170,7 +235,18 @@
 				2A3CCF3D1E7917D200653ACF /* LWViewProtocol.h */,
 				2A3CCF3E1E7917F800653ACF /* LWViewModel.h */,
 				2A3CCF3F1E7917F900653ACF /* LWViewModel.m */,
-				2A3CCF411E79180D00653ACF /* LWViewModelProtocol.h */,
+				2AFFADC31E7A35F700CCF22B /* LWViewModelProtocol.h */,
+				2AFFADC51E7A770900CCF22B /* LWCollectionViewCell.h */,
+				2AFFADC61E7A770900CCF22B /* LWCollectionViewCell.m */,
+				2AFFADC71E7A770900CCF22B /* LWCollerctionViewCellProtocol.h */,
+				2AFFADC81E7A770900CCF22B /* LWNavigationController.h */,
+				2AFFADC91E7A770900CCF22B /* LWNavigationController.m */,
+				2AFFADCA1E7A770900CCF22B /* LWTableViewCell.h */,
+				2AFFADCB1E7A770900CCF22B /* LWTableViewCell.m */,
+				2AFFADCC1E7A770900CCF22B /* LWTableVIewCellProtocol.h */,
+				2AFFADCD1E7A770900CCF22B /* LWTableViewHeaderFooterView.h */,
+				2AFFADCE1E7A770900CCF22B /* LWTableViewHeaderFooterView.m */,
+				2AFFADCF1E7A770900CCF22B /* LWTableViewHeaderFooterViewProtocol.h */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -564,11 +640,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AFBB51C1E78D346002EE0D6 /* main.m in Sources */,
+				2AFFADD31E7A770900CCF22B /* LWTableViewHeaderFooterView.m in Sources */,
 				2AFBB56C1E78DB1F002EE0D6 /* LWThirdPartService.m in Sources */,
+				2AFFADD91E7A7C6C00CCF22B /* LWCircleListView.m in Sources */,
 				2A3CCF381E79176E00653ACF /* LWViewController.m in Sources */,
 				2A3CCF401E7917F900653ACF /* LWViewModel.m in Sources */,
+				2AFFADEE1E7A7D9200CCF22B /* LWCircleListSectionHeaderViewModel.m in Sources */,
+				2AFFADE21E7A7D1900CCF22B /* LWCircleListHeaderView.m in Sources */,
+				2AFFADD61E7A785300CCF22B /* LWCirleListViewController.m in Sources */,
+				2AFFADF11E7A7DA400CCF22B /* LWCircleListViewModel.m in Sources */,
 				2AFBB5691E78DB01002EE0D6 /* LWStartApp.m in Sources */,
+				2AFFADD01E7A770900CCF22B /* LWCollectionViewCell.m in Sources */,
+				2AFFADE51E7A7D4000CCF22B /* LWCircleListCollectionCell.m in Sources */,
+				2AFFADD11E7A770900CCF22B /* LWNavigationController.m in Sources */,
 				2AFBB5501E78D6A1002EE0D6 /* AppDelegate.m in Sources */,
+				2AFFADDC1E7A7C8C00CCF22B /* LWCircleListTableCell.m in Sources */,
+				2AFFADDF1E7A7D0500CCF22B /* LWCircleListSectionHeaderView.m in Sources */,
+				2AFFADEB1E7A7D7B00CCF22B /* LWCircleListHeaderViewModel.m in Sources */,
+				2AFFADD21E7A770900CCF22B /* LWTableViewCell.m in Sources */,
+				2AFFADE81E7A7D6900CCF22B /* LWCircleListColectionCellViewModel.m in Sources */,
 				2A3CCF471E79396D00653ACF /* LWCoreToolCenter.m in Sources */,
 				2A3CCF3C1E7917C400653ACF /* LWView.m in Sources */,
 				2A3CCF441E79193800653ACF /* CMRequest.m in Sources */,
@@ -719,14 +809,54 @@
 			baseConfigurationReference = E9D49377A9EC5824A1B46796 /* Pods-LWMVVMDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 9J6JH9B3QM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LWMVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LWMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CHTCollectionViewWaterfallLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CTAssetsPickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DACircularProgress\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DLStarRating\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DOPDropDownMenu-Enhanced\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DTCoreText\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DTFoundation\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DZNEmptyDataSet\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EAIntroView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EARestrictedScrollView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EGOCache\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FDFullscreenPopGesture\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDRadialProgress\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJPopupViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MMDrawerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MZAppearance\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RDVTabBarController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Reachability\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SlackTextViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITableView+FDTemplateLayoutCell\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/VZInspector\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WMPageController\"",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = qianbao.LWMVVMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -735,14 +865,54 @@
 			baseConfigurationReference = F152A32B105EB55953B466BB /* Pods-LWMVVMDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				DEVELOPMENT_TEAM = 9J6JH9B3QM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = LWMVVMDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = LWMVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CHTCollectionViewWaterfallLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/CTAssetsPickerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DACircularProgress\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DLStarRating\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DOPDropDownMenu-Enhanced\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DTCoreText\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DTFoundation\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/DZNEmptyDataSet\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EAIntroView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EARestrictedScrollView\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/EGOCache\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/FDFullscreenPopGesture\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/IQKeyboardManager\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONKit\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MDRadialProgress\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJExtension\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJPopupViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MJRefresh\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MMDrawerController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MZAppearance\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MagicalRecord\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Masonry\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/RDVTabBarController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Reachability\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ReactiveCocoa\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SDWebImage\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SVProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/SlackTextViewController\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/UITableView+FDTemplateLayoutCell\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/VZInspector\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/WMPageController\"",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = qianbao.LWMVVMDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

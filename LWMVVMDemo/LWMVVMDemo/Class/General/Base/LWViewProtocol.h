@@ -6,8 +6,20 @@
 //  Copyright © 2017年 qianbaoeo. All rights reserved.
 //
 
-#ifndef LWViewProtocol_h
-#define LWViewProtocol_h
+#import <Foundation/Foundation.h>
+#import "LWViewModelProtocol.h"
+/*
+ *  
+ 
+ 遵守
+ */
+@protocol LWViewModelProtocol;
+@protocol LWViewProtocol <NSObject>
+@optional
+- (instancetype)initWithViewModel:(id<LWViewModelProtocol>)viewModel;
+//绑定viewmodel
+- (void)lw_bindViewModel;
+- (void)lw_setUpViews;
+- (void)lw_addRetureKeyBoard;
 
-
-#endif /* LWViewProtocol_h */
+@end

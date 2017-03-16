@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LWView : UIView
+#import "LWViewProtocol.h"
+@interface LWView : UIView<LWViewProtocol>
 
 @end

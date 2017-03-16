@@ -12,8 +12,8 @@
 #ifdef __OBJC__
 #import "AppDelegate.h"
 
-//#import "CMRequest.h"
-//#import "LSCoreToolCenter.h"
+#import "CMRequest.h"
+#import "LWCoreToolCenter.h"
 
 #import "ACMacro.h"
 #import "AppMacro.h"
