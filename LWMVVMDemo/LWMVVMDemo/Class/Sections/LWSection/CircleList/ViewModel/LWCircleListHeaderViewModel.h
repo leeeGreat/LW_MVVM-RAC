@@ -16,4 +16,6 @@
 @property (nonatomic, strong) RACSubject *refreshUISubject;
 
 @property (nonatomic, strong) RACSubject *cellClickSubject;
+
+
 @end

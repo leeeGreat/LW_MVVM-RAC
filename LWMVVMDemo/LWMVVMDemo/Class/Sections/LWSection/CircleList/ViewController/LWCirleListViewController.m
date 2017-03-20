@@ -52,6 +52,7 @@
 - (LWCircleListView *)mainView
 {
     if (!_mainView) {
+        //用LWCircleListViewModel 初始化CircleListView
         _mainView = [[LWCircleListView alloc] initWithViewModel:self.viewModel];
     }
     return _mainView;

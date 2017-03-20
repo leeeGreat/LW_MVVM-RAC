@@ -214,7 +214,7 @@
 /**
  *  设置navation
  */
-- (void)lw_layoutNavigation {}
+- (void)lw_layoutNavgations {}
 
 /**
  *  初次获取数据

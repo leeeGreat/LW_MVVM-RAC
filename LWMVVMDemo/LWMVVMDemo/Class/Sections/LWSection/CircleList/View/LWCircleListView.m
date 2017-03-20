@@ -55,4 +55,62 @@
 {
     
 }
+
+
+
+#pragma mark lazyLoad
+- (UITableView *)mainTableView
+{
+    if (!_mainTableView) {
+        _mainTableView = [[UITableView alloc] init];
+        _mainTableView.delegate = self;
+        _mainTableView.dataSource = self;
+        _mainTableView.backgroundColor = [UIColor blueColor];
+        _mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _mainTableView.tableHeaderView = self.listHeaderView;
+        [_mainTableView registerClass:[LWCircleListTableCell class] forCellReuseIdentifier:NSStringFromClass([LWCircleListTableCell class])];
+        
+        //设置mj_header  mj_footer
+        @weakify(self);
+        _mainTableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+            @strongify(self);
+            [self.viewModel.refreshDataCommand execute:nil];
+        }];
+        _mainTableView.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+            @strongify(self);
+            [self.viewModel.nextPageCommand execute:nil];
+        }];
+    }
+    return _mainTableView;
+}
+
+- (LWCircleListHeaderView *)listHeaderView
+{
+    if (!_listHeaderView) {
+        _listHeaderView = [[LWCircleListHeaderView alloc] initWithViewModel:self.viewModel.listHeaderViewModel];
+    }
+    return _listHeaderView;
+}
+
+
+#pragma mark delegates
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 5;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+//    cell.textLabel.text = @"ahahh";
+//    dequeueReusableCellWithIdentifier:forIndexPath:    会调用register class】
+    LWCircleListTableCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LWCircleListTableCell class]) forIndexPath:indexPath];
+    if (indexPath.row<self.viewModel.dataArray.count) {
+        cell.viewModel = self.viewModel.dataArray[indexPath.row];
+    }
+    return cell;
+}
 @end

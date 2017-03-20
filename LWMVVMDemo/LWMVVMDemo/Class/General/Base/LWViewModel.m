@@ -16,6 +16,7 @@
     //传的子类时，viewModel类型是子类，下面调用子类的initialize方法
     LWViewModel *viewModel = [super allocWithZone:zone];
     if (viewModel) {
+        //优先调用viewModel真实类的对象方法
         [viewModel lw_initialize];
     }
     return viewModel;

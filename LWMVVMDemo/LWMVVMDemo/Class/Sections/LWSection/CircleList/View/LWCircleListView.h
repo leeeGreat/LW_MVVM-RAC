@@ -7,7 +7,8 @@
 //
 
 #import "LWView.h"
-
+#import "LWCircleListColectionCellViewModel.h"
 
 @interface LWCircleListView : LWView
+
 @end

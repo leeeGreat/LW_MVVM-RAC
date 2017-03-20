@@ -5,7 +5,8 @@
 //  Created by qianbaoeo on 2017/3/15.
 //  Copyright © 2017年 qianbaoeo. All rights reserved.
 //
-
+#import "LWNavigationController.h"
+#import "LWCirleListViewController.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    LWCirleListViewController *controller = [[LWCirleListViewController alloc] init];
+    LWNavigationController *nav = [[LWNavigationController alloc] initWithRootViewController:controller];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor grayColor];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
