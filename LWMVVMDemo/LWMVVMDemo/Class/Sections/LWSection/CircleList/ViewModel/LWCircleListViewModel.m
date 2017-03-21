@@ -51,16 +51,23 @@
 
         //发送消息给listHeaderView，让其执行block内 collectionView reloadData
         [self.listHeaderViewModel.refreshUISubject sendNext:nil];
-        [self.refreshEndSubject sendNext:@(LWFooterRefresh_HasMoreData)];
+        if ([x integerValue]==LWRefreshError) {
+            [self.refreshEndSubject sendNext:@(LWRefreshError)];
+        }
+        else
+        {
+             [self.refreshEndSubject sendNext:@(LWFooterRefresh_HasMoreData)];
+        }
+        
 //        DissmissHud();
     }];
     
     //下面这个订阅伽马用？ 跳过一次再执行一次？send两次吗？
-    [[[self.refreshDataCommand.executing skip:1] take:1] subscribeNext:^(id x) {
-        if ([x isEqualToNumber:@(YES)]) {
-            ShowMaskStatus(@"正在加载中啊");
-        }
-    }];
+//    [[[self.refreshDataCommand.executing skip:1] take:1] subscribeNext:^(id x) {
+//        if ([x isEqualToNumber:@(YES)]) {
+//            ShowMaskStatus(@"正在加载中啊");
+//        }
+//    }];
     
     //下一页，上啦刷新用   信号中的信号，x是传过来的dict  然后解析传给self.mArray，此处模拟数据
     [self.nextPageCommand.executionSignals.switchToLatest subscribeNext:^(id x) {
@@ -100,7 +107,7 @@
 
 - (RACSubject *)cellClickSubject
 {
-    if (_cellClickSubject) {
+    if (!_cellClickSubject) {
         _cellClickSubject = [RACSubject subject];
     }
     return _cellClickSubject;
@@ -120,8 +127,10 @@
                                        self.currentPage = 1;
                                        [self.request POST:REQUEST_URL parameters:nil success:^(CMRequest *request, NSString *responseString)
                                        {
-                                           
+                                           NSLog(@"baidu--responseString--%@",responseString);
+                                           //示范而已，responseString是html格式的，解析出来是null
                                            NSDictionary *dict = [responseString objectFromJSONString];
+                                           NSLog(@"baidu--dict--%@",dict);
                                            [subscriber sendNext:dict];
                                            [subscriber sendCompleted];
                                            //数据返回后，sendNext
@@ -129,6 +138,7 @@
                                        } failure:^(CMRequest *request, NSError *error)
                                        {
                                            ShowErrorStatus(@"网络连接失败");
+                                           [subscriber sendNext:@(LWRefreshError)];
                                            [subscriber sendCompleted];
                                        }];
                                        //这里一般写nil
@@ -178,5 +188,14 @@
         _refreshEndSubject = [RACSubject subject];
     }
     return _refreshEndSubject;
+}
+
+- (LWCircleListSectionHeaderViewModel *)sectionHeaderViewModel
+{
+    if (!_sectionHeaderViewModel) {
+        _sectionHeaderViewModel = [[LWCircleListSectionHeaderViewModel alloc] init];
+        _sectionHeaderViewModel.title = @"推荐";
+    }
+    return _sectionHeaderViewModel;
 }
 @end

@@ -47,6 +47,7 @@
 
 - (void)lw_bindViewModel{}
 
+//tableviewCell bindViewModel设置不行，需要在下面方法设置viewModel，前者无效
 - (void)setViewModel:(LWCircleListColectionCellViewModel *)viewModel
 {
 #warning 到这里了！
@@ -69,9 +70,8 @@
     CGFloat paddingEdge = 10;
     [self.headerImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(paddingEdge);
-        make.right.equalTo(-paddingEdge);
-        make.center.equalTo(self.contentView.center);
-        make.height.equalTo(15);
+        make.centerY.equalTo(weakSelf.contentView);
+        make.size.equalTo(CGSizeMake(80, 80));
     }];
     
     [self.nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -135,7 +135,7 @@
 {
     if (!_headerImageView) {
         _headerImageView = [[UIImageView alloc] init];
-        
+        _headerImageView.backgroundColor = [UIColor grayColor];
     }
     return _headerImageView;
 }
@@ -150,6 +150,7 @@
 {
     if (!_articleImageView) {
         _articleImageView = [[UIImageView alloc] init];
+          _articleImageView.backgroundColor = red_color;
     }
     return _articleImageView;
 }

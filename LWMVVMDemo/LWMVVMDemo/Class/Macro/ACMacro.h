@@ -347,7 +347,7 @@ description:__VA_ARGS__];\
 #define HB10 [UIFont boldSystemFontOfSize:10]
 #define HB8 [UIFont boldSystemFontOfSize:8]
 
-///常用颜色
+///常用颜色  都改成大写！
 #define black_color     [UIColor blackColor]
 #define blue_color      [UIColor blueColor]
 #define brown_color     [UIColor brownColor]

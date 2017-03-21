@@ -9,5 +9,5 @@
 #import "LWViewModel.h"
 
 @interface LWCircleListSectionHeaderViewModel : LWViewModel
-
+@property (nonatomic, copy) NSString *title;
 @end

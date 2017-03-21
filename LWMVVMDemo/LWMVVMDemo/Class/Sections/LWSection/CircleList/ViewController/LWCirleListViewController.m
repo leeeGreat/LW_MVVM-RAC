@@ -16,6 +16,17 @@
 
 @implementation LWCirleListViewController
 
+- (void)lw_bindViewModel
+{
+    @weakify(self);
+    [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
+        @strongify(self);
+        LWViewController *lwVC = [[LWViewController alloc] init];
+        [self.navigationController pushViewController:lwVC animated:YES];
+        NSLog(@"didclickedselectrow");
+    }];
+    NSLog(@"lw_bindViewModel--lwcirclelistviewcontroller");
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

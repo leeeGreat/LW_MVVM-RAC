@@ -7,7 +7,8 @@
 //
 
 #import "LWView.h"
-
+#import "LWCircleListSectionHeaderViewModel.h"
 @interface LWCircleListSectionHeaderView : LWView
+
 
 @end

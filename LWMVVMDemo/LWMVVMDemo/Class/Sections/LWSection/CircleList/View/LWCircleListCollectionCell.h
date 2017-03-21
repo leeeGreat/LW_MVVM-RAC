@@ -7,7 +7,11 @@
 //
 
 #import "LWCollectionViewCell.h"
-
+#import "LWCircleListColectionCellViewModel.h"
 @interface LWCircleListCollectionCell : LWCollectionViewCell
-
+@property (nonatomic,strong) LWCircleListColectionCellViewModel *viewModel;
+/**
+ *  加入新圈子
+ */
+@property (nonatomic, strong) NSString *type;
 @end
