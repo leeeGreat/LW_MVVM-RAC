@@ -74,7 +74,7 @@ void ShowProgress(CGFloat progress){
     }
 }
 
-void DismissHud(void){
+void DissmissHud(void){
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [SVProgressHUD dismiss];

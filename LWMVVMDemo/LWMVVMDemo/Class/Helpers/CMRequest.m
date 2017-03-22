@@ -45,6 +45,7 @@
 
 - (void)POST:(NSString *)URLString parameters:(NSDictionary *)parameters success:(void (^)(CMRequest *, NSString *))success failure:(void (^)(CMRequest *, NSError *))failure
 {
+    ShowSuccessStatus(@"加载成功");
     self.operationQueue = self.operationManager.operationQueue;
     self.operationManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     

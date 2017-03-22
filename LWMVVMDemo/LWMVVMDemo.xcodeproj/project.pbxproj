@@ -12,6 +12,10 @@
 		2A3CCF401E7917F900653ACF /* LWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF3F1E7917F900653ACF /* LWViewModel.m */; };
 		2A3CCF441E79193800653ACF /* CMRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF431E79193800653ACF /* CMRequest.m */; };
 		2A3CCF471E79396D00653ACF /* LWCoreToolCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CCF461E79396D00653ACF /* LWCoreToolCenter.m */; };
+		2A73A4511E825FC6004FFBB7 /* LWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A73A4501E825FC5004FFBB7 /* LWSecondViewController.m */; };
+		2A73A4551E8262E9004FFBB7 /* circle_plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A73A4521E8262E9004FFBB7 /* circle_plus@2x.png */; };
+		2A73A4561E8262E9004FFBB7 /* circle_plus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A73A4531E8262E9004FFBB7 /* circle_plus@3x.png */; };
+		2A73A4571E8262E9004FFBB7 /* yc_circle_placeHolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A73A4541E8262E9004FFBB7 /* yc_circle_placeHolder@2x.png */; };
 		2AFBB51C1E78D346002EE0D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFBB51B1E78D346002EE0D6 /* main.m */; };
 		2AFBB5251E78D346002EE0D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBB5231E78D346002EE0D6 /* Main.storyboard */; };
 		2AFBB5271E78D346002EE0D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AFBB5261E78D346002EE0D6 /* Assets.xcassets */; };
@@ -69,6 +73,11 @@
 		2A3CCF431E79193800653ACF /* CMRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMRequest.m; sourceTree = "<group>"; };
 		2A3CCF451E79396D00653ACF /* LWCoreToolCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCoreToolCenter.h; sourceTree = "<group>"; };
 		2A3CCF461E79396D00653ACF /* LWCoreToolCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCoreToolCenter.m; sourceTree = "<group>"; };
+		2A73A44F1E825FC5004FFBB7 /* LWSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWSecondViewController.h; sourceTree = "<group>"; };
+		2A73A4501E825FC5004FFBB7 /* LWSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWSecondViewController.m; sourceTree = "<group>"; };
+		2A73A4521E8262E9004FFBB7 /* circle_plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_plus@2x.png"; sourceTree = "<group>"; };
+		2A73A4531E8262E9004FFBB7 /* circle_plus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle_plus@3x.png"; sourceTree = "<group>"; };
+		2A73A4541E8262E9004FFBB7 /* yc_circle_placeHolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yc_circle_placeHolder@2x.png"; sourceTree = "<group>"; };
 		2AFBB5171E78D346002EE0D6 /* LWMVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWMVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AFBB51B1E78D346002EE0D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2AFBB5241E78D346002EE0D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -205,6 +214,8 @@
 			children = (
 				2AFFADD41E7A785300CCF22B /* LWCirleListViewController.h */,
 				2AFFADD51E7A785300CCF22B /* LWCirleListViewController.m */,
+				2A73A44F1E825FC5004FFBB7 /* LWSecondViewController.h */,
+				2A73A4501E825FC5004FFBB7 /* LWSecondViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -432,6 +443,9 @@
 		2AFBB5571E78D75D002EE0D6 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2A73A4521E8262E9004FFBB7 /* circle_plus@2x.png */,
+				2A73A4531E8262E9004FFBB7 /* circle_plus@3x.png */,
+				2A73A4541E8262E9004FFBB7 /* yc_circle_placeHolder@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -564,6 +578,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A73A4571E8262E9004FFBB7 /* yc_circle_placeHolder@2x.png in Resources */,
+				2A73A4551E8262E9004FFBB7 /* circle_plus@2x.png in Resources */,
+				2A73A4561E8262E9004FFBB7 /* circle_plus@3x.png in Resources */,
 				2AFBB52A1E78D346002EE0D6 /* LaunchScreen.storyboard in Resources */,
 				2AFBB5271E78D346002EE0D6 /* Assets.xcassets in Resources */,
 				2AFBB5251E78D346002EE0D6 /* Main.storyboard in Resources */,
@@ -640,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AFBB51C1E78D346002EE0D6 /* main.m in Sources */,
+				2A73A4511E825FC6004FFBB7 /* LWSecondViewController.m in Sources */,
 				2AFFADD31E7A770900CCF22B /* LWTableViewHeaderFooterView.m in Sources */,
 				2AFBB56C1E78DB1F002EE0D6 /* LWThirdPartService.m in Sources */,
 				2AFFADD91E7A7C6C00CCF22B /* LWCircleListView.m in Sources */,

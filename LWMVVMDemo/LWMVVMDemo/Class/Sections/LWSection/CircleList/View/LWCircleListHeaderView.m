@@ -162,7 +162,7 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    [self.viewModel.cellClickSubject sendNext:nil];
+    [self.viewModel.cellClickSubject sendNext:nil];
 }
 
 @end

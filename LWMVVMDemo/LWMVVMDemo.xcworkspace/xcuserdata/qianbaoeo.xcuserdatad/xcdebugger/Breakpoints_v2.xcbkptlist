@@ -74,7 +74,7 @@
                   moduleName = "LWMVVMDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qianbaoeo/Desktop/LW_MVVM-RAC/LWMVVMDemo/LWMVVMDemo/Class/Sections/LWSection/CircleList/ViewModel/LWCircleListViewModel.m"
-                  timestampString = "511780168.760099"
+                  timestampString = "511864297.548616"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -89,7 +89,7 @@
                   moduleName = "LWMVVMDemo"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/qianbaoeo/Desktop/LW_MVVM-RAC/LWMVVMDemo/LWMVVMDemo/Class/Sections/LWSection/CircleList/ViewModel/LWCircleListViewModel.m"
-                  timestampString = "511780168.761359"
+                  timestampString = "511864297.549902"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
-            timestampString = "511772609.016799"
+            timestampString = "511860096.685451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "+allocWithZone:"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
-            timestampString = "511772610.792944"
+            timestampString = "511860096.685451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "+allocWithZone:"
             landmarkType = "7">
          </BreakpointContent>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
-            timestampString = "511773276.912501"
+            timestampString = "511860096.685451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "+allocWithZone:"
             landmarkType = "7">
          </BreakpointContent>
@@ -288,6 +288,86 @@
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "-setViewModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
+            timestampString = "511860096.685451"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "+allocWithZone:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[LWViewController allocWithZone:]"
+                  moduleName = "LWMVVMDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianbaoeo/Desktop/LW_MVVM-RAC/LWMVVMDemo/LWMVVMDemo/Class/General/Base/LWViewController.m"
+                  timestampString = "511864297.585625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__34+[LWViewController allocWithZone:]_block_invoke"
+                  moduleName = "LWMVVMDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/qianbaoeo/Desktop/LW_MVVM-RAC/LWMVVMDemo/LWMVVMDemo/Class/General/Base/LWViewController.m"
+                  timestampString = "511864297.586888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
+            timestampString = "511864207.703146"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "+allocWithZone:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LWMVVMDemo/Class/General/Base/LWViewController.m"
+            timestampString = "511864275.323664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "+allocWithZone:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
