@@ -30,6 +30,7 @@
 }
 - (void)lw_bindViewModel {
     [super lw_bindViewModel];
+//    we
 }
 - (void)lw_layoutNavgations {
     [super lw_layoutNavgations];
