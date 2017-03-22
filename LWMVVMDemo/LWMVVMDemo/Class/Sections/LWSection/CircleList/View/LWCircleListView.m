@@ -210,7 +210,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
+//    reture
     return 45;
 }
 
@@ -223,6 +223,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //可以传输组过去 array[indepath.row]   push  相当于代理一样
-//    [self.viewModel.cellClickSubject sendNext:nil];
+    [self.viewModel.cellClickSubject sendNext:nil];
 }
 @end

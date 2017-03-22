@@ -18,6 +18,7 @@
 //为啥这样写？
 + (instancetype)allocWithZone:(struct _NSZone *)zone
 {
+    NSLog(@"LWViewController+allocWithZone");
     LWViewController *viewController = [super allocWithZone:zone];
     
     @weakify(viewController)
@@ -145,6 +146,22 @@
     }
 }
 
+- (void)changeStatusBarStyle:(UIStatusBarStyle)statusBarStyle
+             statusBarHidden:(BOOL)statusBarHidden
+     changeStatusBarAnimated:(BOOL)animated {
+    
+    self.statusBarStyle=statusBarStyle;
+    self.statusBarHidden=statusBarHidden;
+    if (animated) {
+        [UIView animateWithDuration:0.25 animations:^{
+            [self setNeedsStatusBarAppearanceUpdate];
+        }];
+    }
+    else{
+        [self setNeedsStatusBarAppearanceUpdate];
+    }
+}
+
 - (void)hideNavigationBar:(BOOL)isHide
                  animated:(BOOL)animated{
     
@@ -204,7 +221,7 @@
 /**
  *  添加控件
  */
-- (void)lw_addSubviews {}
+- (void)lw_addSubViews {}
 
 /**
  *  绑定

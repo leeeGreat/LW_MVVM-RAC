@@ -5,6 +5,7 @@
 //  Created by qianbaoeo on 2017/3/16.
 //  Copyright © 2017年 qianbaoeo. All rights reserved.
 //
+#import "LWSecondViewController.h"
 #import "LWCircleListView.h"
 #import "LWCircleListViewModel.h"
 #import "LWCirleListViewController.h"
@@ -21,7 +22,7 @@
     @weakify(self);
     [[self.viewModel.cellClickSubject takeUntil:self.rac_willDeallocSignal] subscribeNext:^(id x) {
         @strongify(self);
-        LWViewController *lwVC = [[LWViewController alloc] init];
+        LWSecondViewController *lwVC = [[LWSecondViewController alloc] init];
         [self.navigationController pushViewController:lwVC animated:YES];
         NSLog(@"didclickedselectrow");
     }];

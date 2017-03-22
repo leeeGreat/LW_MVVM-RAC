@@ -22,5 +22,15 @@
     return _refreshUISubject;
 }
 
+- (RACSubject *)cellClickSubject {
+    
+    if (!_cellClickSubject) {
+        
+        _cellClickSubject = [RACSubject subject];
+    }
+    
+    return _cellClickSubject;
+}
+
 
 @end

@@ -59,7 +59,7 @@
              [self.refreshEndSubject sendNext:@(LWFooterRefresh_HasMoreData)];
         }
         
-//        DissmissHud();
+        DissmissHud();
     }];
     
     //下面这个订阅伽马用？ 跳过一次再执行一次？send两次吗？
@@ -87,7 +87,7 @@
         self.dataArray = reArray;
         //触发listView中 订阅者block执行，刷新collectionView根据传的值确定是 下拉还是上啦加载更多，或者错误等？
         [self.refreshEndSubject sendNext:@(LWFooterRefresh_HasMoreData)];
-//        DissmissHud();
+        DissmissHud();
         
     }];
     
